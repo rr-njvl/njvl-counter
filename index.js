@@ -7,16 +7,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'Counter App'
+      name: 'Counter Demo App'
     };
   }
 
   render() {
     return (
       <div>
-        <p>
-          <h2>Counter Demo:</h2>
-        </p>
         <Counter name={this.state.name} />
       </div>
     );

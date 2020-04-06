@@ -1,8 +1,10 @@
 import React from 'react';
 
 class Counter extends React.Component {
+  name;
   constructor(props) {
     super(props);
+    this.name = props.name;
     this.state = { counter: 0 };
   }
 
@@ -17,6 +19,7 @@ class Counter extends React.Component {
     return (
       <div className="calculator">
         <div>
+          <h2>{this.name}</h2>
           <h4>App to increment or decrement the counter on button clicks</h4>
         </div>
         <div>
