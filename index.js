@@ -14,10 +14,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Counter name={this.state.name} />
         <p>
-          Start editing to see some magic happen :)
+          <h2>Counter Demo:</h2>
         </p>
+        <Counter name={this.state.name} />
       </div>
     );
   }
