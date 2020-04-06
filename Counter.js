@@ -17,7 +17,7 @@ class Counter extends React.Component {
     return (
       <div className="calculator">
         <div>
-          <h2>App to increment or decrement the counter on button clicks</h2>
+          <h4>App to increment or decrement the counter on button clicks</h4>
         </div>
         <div>
           <button type="button" onClick={this.increment}>
