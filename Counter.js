@@ -8,11 +8,11 @@ class Counter extends React.Component {
     this.state = { counter: 0 };
   }
 
-  increment = () => {
+  incrementCounterValue = () => {
     this.setState({ counter: this.state.counter + 1 });
   };
 
-  decrement = () => {
+  decrementCounterValue = () => {
     this.setState({ counter: this.state.counter - 1 });
   };
   render() {
@@ -23,10 +23,10 @@ class Counter extends React.Component {
           <h4>App to increment or decrement the counter on button clicks</h4>
         </div>
         <div>
-          <button type="button" onClick={this.increment}>
+          <button type="button" onClick={this.incrementCounterValue}>
             Increment
           </button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="button" onClick={this.decrement}>
+          <button type="button" onClick={this.decrementCounterValue}>
             Decrement
           </button>
           <h4>
